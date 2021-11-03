@@ -1,0 +1,206 @@
+/* Cor do texto #555 */
+
+/*------------------------------------------*/
+/* Basic Setup */
+/*------------------------------------------*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  background-color: #fff;
+  color: #555;
+  font-family: 'Quicksand', 'Arial', sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  text-rendering: optimizeLegibility;
+  overflow-x: hidden;
+}
+
+.clearfix {
+  zoom: 1;
+}
+.clearfix:after {
+  content: '.';
+  clear: both;
+  display: block;
+  height: 0;
+  visibility: hidden;
+}
+
+/*------------------------------------------*/
+/* COMPONENTES REUTILIZAVEIS */
+/*------------------------------------------*/
+
+section {
+  padding: 40px 0;
+  margin-top: 10px;
+}
+
+textarea {
+  resize: none;
+}
+
+/*---- LINKS ----*/
+a {
+  color: #555;
+  text-decoration: none;
+}
+
+/*------------------------------------------*/
+/* HEADER */
+/*------------------------------------------*/
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.95);
+  box-shadow: 0 2px 2px #dbdbdb;
+  z-index: 1000;
+}
+
+/*------------------------------------------*/
+/* CONTEINER FLEX */
+/*------------------------------------------*/
+.container {
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  border: 2px solid #909090;
+}
+
+.column {
+  flex-direction: column;
+}
+
+.row {
+  flex-direction: row;
+}
+
+.flex-start {
+  justify-content: flex-start;
+}
+
+.center_item {
+  align-self: center;
+}
+
+.flex-start_item {
+  align-self: flex-start;
+}
+
+.flex-end_item {
+  align-self: flex-end;
+}
+
+.grow1 {
+  flex-grow: 1;
+}
+
+.grow2 {
+  flex-grow: 2;
+}
+
+/*------------------------------------------*/
+/* INPUT */
+/*------------------------------------------*/
+
+.input {
+  margin: 10px 0px 0px 0px;
+}
+
+.long_input {
+  margin: 10px 0px 20px 0px;
+}
+
+/*------------------------------------------*/
+/* BOTOES */
+/*------------------------------------------*/
+.btn_volta1,
+.btn_volta2 {
+  margin: 0px 0px 0px 30px;
+}
+
+.btn_memoria {
+  width: 100%;
+  height: 100%;
+  display: block;
+  padding: 10px 0px 10px 20px;
+  background: linear-gradient(lightblue, orangered);
+}
+
+.btn_memoria:hover {
+  background: linear-gradient(orangered, lightblue);
+}
+
+.btn_memoria:active {
+  background: limegreen;
+}
+/*------------------------------------------*/
+/* DIFERENTES PAGINAS */
+/*------------------------------------------*/
+.memory_page,
+.add_page {
+  position: fixed;
+  max-width: 100%;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  margin-top: 0;
+  z-index: 1;
+  background-color: rgba(255, 255, 255, 0.85);
+}
+
+.memory_box,
+.add_box {
+  width: 350px;
+  margin: 0px 0px 0px -175px; /* Negativo == ao width */
+  left: 50%;
+  top: 25%;
+  position: fixed;
+  z-index: 2;
+  background-color: #fff;
+}
+
+.description_box {
+  margin: 10px 0px 20px 0px;
+}
+
+.biblio {
+  position: relative;
+  height: 700px;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 40px;
+  background-color: #989898;
+  text-align: center;
+}
+
+.copyright {
+  color: #fff;
+}
+
+/*------------------------------------------*/
+/* Itens de uma Lista */
+/*------------------------------------------*/
+.container i {
+  margin: 3px 5px;
+}
+
+.container i:first-child {
+  margin-top: 10px;
+}
+
+.container i:last-child {
+  margin-bottom: 10px;
+}

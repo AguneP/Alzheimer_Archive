@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta charset="ISO-8859-1" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+		/>
+		<link rel="stylesheet" type="text/css" href="recursos/css/style.css" />
+		<title>Alzheimer Archive</title>
+	</head>
+	<body>
+		<!--
+			Pop-up para inserir uma memoria
+		-->
+		<section class="container add_page">
+			<div class="container column add_box">
+				<button class="item flex-start_item btn_volta1">VOLTA</button>
+				<input
+					placeholder="Titulo da Memoria"
+					type="text"
+					class="item input center_item"
+				/>
+				<textarea
+					placeholder="Descricao da memoria"
+					rows="15"
+					class="item center_item long_input"
+				></textarea>
+				<button class="item center_item btn_add">ADICIONAR</button>
+			</div>
+		</section>
+
+		<!--
+			Pop-up para ver a memoria em detalhes
+		-->
+		<section class="container memory_page" id="1">
+			<div class="container column memory_box">
+				<button class="item flex-start_item btn_volta2">VOLTA</button>
+				<h2 class="item center_item">%Titulo%</h2>
+				<textarea
+					rows="16"
+					disabled
+					class="item center_item description_box"
+				>
+%Desricao%</textarea
+				>
+			</div>
+		</section>
+
+		<!--
+			Pagina com todas as memorias
+		-->
+		<section class="container column biblio">
+			<div class="conteiner row main_top">
+				<h1 class="flex-start_item grow1">%NOME%</h1>
+				<button class="flex-end_item btn_add_memoria grow2">
+					%ADICIONAR MEMORIA%
+				</button>
+				<button class="flex-end_item btn_remove_memoria grow2">
+					%REMOVER MEMORIA%
+				</button>
+			</div>
+
+			<div class="main_bottom">
+				<h2 class="item center">MEMORIAS ARMAZENADAS</h2>
+				<ul class="container column">
+					<i class="item" id="1">
+						<button class="btn_memoria">%MEMORIA 1%</button>
+					</i>
+					<i class="item" id="1">
+						<button class="btn_memoria">%MEMORIA 1%</button>
+					</i>
+					<i class="item" id="1">
+						<button class="btn_memoria">%MEMORIA 1%</button>
+					</i>
+					<i class="item" id="1">
+						<button class="btn_memoria">%MEMORIA 1%</button>
+					</i>
+				</ul>
+			</div>
+
+			<div class="footer container">
+				<div class="center_item copyright">Alzheimer Archive - @2021</div>
+			</div>
+		</section>
+	</body>
+	<script type="text/javascript" src="recursos/js/app.js"></script>
+</html>
